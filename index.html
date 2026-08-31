@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071018"><link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="styles.css"><title>NOVA</title>
+</head>
+<body>
+<main>
+<header><div class="orb">N</div><div><b>NOVA</b><small>JARVIS MODE • ONLINE</small></div></header>
+<section class="hero"><div class="ring"></div><div><small>PERSONAL AI ASSISTANT</small><h1>Good day.</h1><p id="reply">NOVA is ready. Tell me what you need.</p></div></section>
+<section><label>CONVERSE</label><div id="chat"></div>
+<div class="row"><input id="cmd" placeholder="Ask NOVA anything…"><button id="mic">🎙</button><button id="send">Send</button></div>
+<button id="speak" class="wide">🔊 Speak last response</button></section>
+<div class="cols"><section><label>DEVICE</label><p id="device">Reading device…</p></section><section><label>LOCATION</label><p id="location">Location not requested.</p><button id="locate" class="wide">📍 Locate me</button></section></div>
+<section><label>NOVA TOOLS</label><div class="tools">
+<button data-cmd="What time is it?">Time</button><button data-cmd="What is my device status?">Device</button>
+<button data-cmd="Where am I?">Location</button><button data-cmd="What can you do?">Capabilities</button></div></section>
+<section><label>PRIVATE AI BACKEND</label><p class="muted">Optional HTTP endpoint for your own local/private AI.</p>
+<input id="endpoint" placeholder="https://your-server.example/api/chat"><input id="model" placeholder="Model name">
+<button id="save" class="wide">Save backend</button><p id="saved" class="muted"></p></section>
+<footer>NOVA • Assistant-first mobile companion</footer>
+</main><script src="app.js"></script>
+</body></html>
